@@ -24,4 +24,4 @@ yarn dev
 - Prettier v3
 - MSW v2
 - Eslint v8
-
+- React-Testing-Library v16

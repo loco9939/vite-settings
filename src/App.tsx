@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import './App.css';
-
 function App(): React.ReactElement {
   const [mock, setMock] = useState(null);
   useEffect(() => {
@@ -11,9 +9,8 @@ function App(): React.ReactElement {
       });
       const data = await response.json();
       setMock(data);
-    };
-
-    fetchMocks();
+    }
+    fetchMocks()
   }, []);
   return (
     <div>
