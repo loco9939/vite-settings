@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 
 import App from './App';
@@ -14,5 +14,14 @@ describe('test code', () => {
     render(<App />);
 
     expect(screen.getByText(/App/)).toBeInTheDocument();
+  });
+
+  it('renders firstName', async () => {
+    render(<App />);
+
+    await waitFor(() => {
+      const firstName = screen.getByText(/John/);
+      expect(firstName);
+    });
   });
 });
