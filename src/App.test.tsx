@@ -1,9 +1,6 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
-import React from 'react';
 
 import App from './App';
-
-React;
 
 const context = describe;
 describe('App', () => {

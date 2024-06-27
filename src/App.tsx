@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import appStore from './stores/app.store';
 
@@ -11,7 +11,7 @@ const Button = styled.button`
   padding: 0.25em 1em;
 `;
 
-function App(): React.ReactElement {
+function App() {
   const [mock, setMock] = useState(null);
 
   const bears = appStore(state => state.bears);
