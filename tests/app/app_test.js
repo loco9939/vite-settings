@@ -1,6 +1,6 @@
 Feature('My First Test');
 
 Scenario('test something', ({ I }) => {
-  I.amOnPage('https://github.com');
-  I.see('GitHub');
+  I.amOnPage('http://localhost:5173');
+  I.see('App');
 });
